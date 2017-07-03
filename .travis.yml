@@ -41,6 +41,10 @@ matrix:
     - python: 3.6
       env: TOXENV=py36-cdh
 
+os:
+  - linux
+  - osx
+
 sudo: false
 
 cache:
@@ -73,3 +77,4 @@ script:
 branches:
   only:
     - master
+    - add-macos-tests
